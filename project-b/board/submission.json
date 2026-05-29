@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T07:04:31.126Z",
+  "savedAt": "2026-05-29T07:05:28.812Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -20,7 +20,7 @@
   "tickets": [],
   "analysis": {
     "ambiguity1": "The requirement to \"auction items, not just set a fixed price\" is too vague because it does not define the core auction mechanics. It fails to specify bidding increments, duration boundaries, sniper protection rules, or how the system should handle winning bidder defaults, making it impossible to write definitive test cases.",
-    "ambiguity2": "",
+    "ambiguity2": "The constraint \"Only people with a valid .edu email address can create an account\" is ambiguous regarding its boundaries. It does not clarify if registration is restricted strictly to our specific university's domain, or if any student from any global university with a generic .edu suffix is permitted to join.",
     "conflictSolution": "",
     "nfr1": "",
     "nfr2": "",
