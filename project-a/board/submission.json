@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:17:22.799Z",
+  "savedAt": "2026-05-29T15:19:12.856Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -65,6 +65,36 @@
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
       "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "50776c8d-e32a-4b27-adc0-7fafc46c65ce",
+      "title": "NFR Epic 1: Data isolation constraint ensuring under no circumstances can any stud",
+      "description": "Data isolation constraint ensuring under no circumstances can any student access, view, or query another student's academic schedule or roadmap.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "7715030f-4bcc-4b08-a21a-b63fa3ec268c",
+      "title": "NFR Epic 2: The system must automatically generate a secure, read-only audit log e",
+      "description": "The system must automatically generate a secure, read-only audit log entry every time an advisor triggers a manual prerequisite override.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "b3fbfe54-38ea-4207-b1a7-3f044430832f",
+      "title": "NFR Epic 3: The calendar interface must support a highly responsive, low-latency d",
+      "description": "The calendar interface must support a highly responsive, low-latency drag-and-drop mechanism for real-time schedule manipulation.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "Epic",
       "priority": "Medium",
       "owner": ""
     }
