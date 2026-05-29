@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-05-29T06:26:46.311Z",
+  "groups": [
+    {
+      "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
+      "name": "Blockers",
+      "color": "#2563eb"
+    },
+    {
+      "id": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "name": "Standard Work",
+      "color": "#059669"
+    },
+    {
+      "id": "4c796b59-6481-4105-add8-b5380e1578bf",
+      "name": "Minors",
+      "color": "#d97706"
+    }
+  ],
+  "tickets": [],
+  "analysis": {
+    "ambiguity1": "The requirement \"the app to warn me if I am choosing a class that starts at 8:00 AM\" is too vague because it does not define the technical nature or behavior of the warning. It fails to specify whether the system should display a non-blocking visual alert, an email notification, or completely block the action, making it impossible to create an exact test case.",
+    "ambiguity2": "",
+    "conflictSolution": "",
+    "nfr1": "",
+    "nfr2": "",
+    "nfr3": ""
+  }
+}
