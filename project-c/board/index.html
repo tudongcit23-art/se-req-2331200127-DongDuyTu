@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Professional Kanban Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Workspace</p>
+          <h1>Kanban Board</h1>
+        </div>
+        <nav class="view-switch" aria-label="Assignment parts">
+          <button class="tab-button active" id="analysisViewTab" type="button">Part A: Analysis</button>
+          <button class="tab-button" id="boardViewTab" type="button">Part B: Specification</button>
+        </nav>
+        <div class="topbar-actions" aria-label="Board actions">
+          <button class="secondary-button" id="importButton" type="button" title="Import JSON" aria-label="Import JSON">
+            <i data-lucide="upload" data-fallback="I"></i>
+            <span>Import</span>
+          </button>
+          <button class="primary-button" id="saveButton" type="button" title="Save JSON" aria-label="Save JSON">
+            <i data-lucide="save" data-fallback="S"></i>
+            <span>Save</span>
+          </button>
+          <button class="primary-button" id="addTicketButton" type="button">
+            <i data-lucide="plus" data-fallback="+"></i>
+            <span>Ticket</span>
+          </button>
+          <button class="secondary-button" id="addGroupButton" type="button">
+            <i data-lucide="layers-3" data-fallback="G"></i>
+            <span>Group</span>
+          </button>
+        </div>
+      </header>
+
+      <main class="board-wrap view-panel" id="boardView">
+        <section class="board-toolbar" aria-label="Board overview">
+          <div class="metric">
+            <span class="metric-value" id="ticketCount">0</span>
+            <span class="metric-label">Tickets</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value" id="groupCount">0</span>
+            <span class="metric-label">Groups</span>
+          </div>
+          <div class="metric grow">
+            <span class="metric-label">Last saved</span>
+            <span class="metric-value subtle" id="lastSaved">Not saved</span>
+          </div>
+        </section>
+
+        <section class="column-header" aria-hidden="true">
+          <span></span>
+          <span>To do</span>
+          <span>In progress</span>
+          <span>Review</span>
+          <span>Done</span>
+        </section>
+
+        <section class="board" id="board" aria-label="Kanban groups"></section>
+      </main>
+
+      <main class="analysis-wrap view-panel active" id="analysisView">
+        <section class="analysis-card">
+          <header class="analysis-header">
+            <h2>Part A: Requirement Analysis</h2>
+            <p>Complete all required fields before moving to user stories in Part B.</p>
+          </header>
+
+          <div class="analysis-grid">
+            <article class="analysis-section">
+              <h3>Ambiguity Check</h3>
+              <p>Identify two vague requirements and explain why they are unclear.</p>
+              <label class="field">
+                <span>Ambiguity 1 - Explanation</span>
+                <textarea id="ambiguity1" rows="4" maxlength="1200" placeholder="Requirement + why it is vague"></textarea>
+              </label>
+              <label class="field">
+                <span>Ambiguity 2 - Explanation</span>
+                <textarea id="ambiguity2" rows="4" maxlength="1200" placeholder="Requirement + why it is vague"></textarea>
+              </label>
+            </article>
+
+            <article class="analysis-section">
+              <h3>Conflict Resolution</h3>
+              <p>Identify one stakeholder conflict and propose a realistic solution.</p>
+              <label class="field">
+                <span>Proposed Solution</span>
+                <textarea id="conflictSolution" rows="5" maxlength="1500" placeholder="Conflict + proposed resolution"></textarea>
+              </label>
+            </article>
+
+            <article class="analysis-section">
+              <h3>Categorization (Top 3 NFRs)</h3>
+              <p>List three non-functional requirements to convert into epics in Part B.</p>
+              <label class="field">
+                <span>NFR 1</span>
+                <textarea id="nfr1" rows="3" maxlength="600" placeholder="e.g., Security: ..."></textarea>
+              </label>
+              <label class="field">
+                <span>NFR 2</span>
+                <textarea id="nfr2" rows="3" maxlength="600" placeholder="e.g., Performance: ..."></textarea>
+              </label>
+              <label class="field">
+                <span>NFR 3</span>
+                <textarea id="nfr3" rows="3" maxlength="600" placeholder="e.g., Usability: ..."></textarea>
+              </label>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="modal" id="ticketDialog">
+      <form method="dialog" class="modal-panel" id="ticketForm">
+        <header class="modal-header">
+          <div>
+            <p class="eyebrow">Ticket</p>
+            <h2 id="ticketDialogTitle">Add ticket</h2>
+          </div>
+          <button class="icon-button ghost" type="button" data-close-dialog="ticketDialog" title="Close" aria-label="Close">
+            <i data-lucide="x" data-fallback="X"></i>
+          </button>
+        </header>
+
+        <label class="field">
+          <span>Title</span>
+          <input id="ticketTitle" name="title" type="text" required maxlength="90" autocomplete="off">
+        </label>
+
+        <label class="field">
+          <span>Description</span>
+          <textarea id="ticketDescription" name="description" rows="4" maxlength="500"></textarea>
+        </label>
+
+        <div class="field-grid">
+          <label class="field">
+            <span>Group</span>
+            <select id="ticketGroup" name="group" required></select>
+          </label>
+          <label class="field">
+            <span>Status</span>
+            <select id="ticketStatus" name="status" required></select>
+          </label>
+        </div>
+
+        <div class="field-grid">
+          <label class="field">
+            <span>Ticket type</span>
+            <select id="ticketType" name="type" required>
+              <option value="User Story">User Story</option>
+              <option value="Epic">Epic</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="field-grid">
+          <label class="field">
+            <span>Priority</span>
+            <select id="ticketPriority" name="priority">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Owner</span>
+            <input id="ticketOwner" name="owner" type="text" maxlength="40" autocomplete="off">
+          </label>
+        </div>
+
+        <footer class="modal-actions">
+          <button class="secondary-button" id="addNfrEpicsButton" type="button">Add 3 NFRs as Epics</button>
+          <button class="secondary-button" type="button" data-close-dialog="ticketDialog">Cancel</button>
+          <button class="primary-button" type="submit">
+            <i data-lucide="check" data-fallback="OK"></i>
+            <span>Save ticket</span>
+          </button>
+        </footer>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="groupDialog">
+      <form method="dialog" class="modal-panel" id="groupForm">
+        <header class="modal-header">
+          <div>
+            <p class="eyebrow">Swimlane</p>
+            <h2 id="groupDialogTitle">Add group</h2>
+          </div>
+          <button class="icon-button ghost" type="button" data-close-dialog="groupDialog" title="Close" aria-label="Close">
+            <i data-lucide="x" data-fallback="X"></i>
+          </button>
+        </header>
+
+        <label class="field">
+          <span>Group name</span>
+          <input id="groupName" name="name" type="text" required maxlength="50" autocomplete="off">
+        </label>
+
+        <label class="field">
+          <span>Color</span>
+          <input id="groupColor" name="color" type="color" value="#2563eb">
+        </label>
+
+        <footer class="modal-actions">
+          <button class="secondary-button" type="button" data-close-dialog="groupDialog">Cancel</button>
+          <button class="primary-button" type="submit">
+            <i data-lucide="check" data-fallback="OK"></i>
+            <span>Save group</span>
+          </button>
+        </footer>
+      </form>
+    </dialog>
+
+    <input id="fileInput" type="file" accept="application/json,.json" hidden>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
