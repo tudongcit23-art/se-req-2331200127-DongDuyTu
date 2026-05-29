@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:14:10.751Z",
+  "savedAt": "2026-05-29T15:14:51.622Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -22,6 +22,16 @@
       "id": "f0433f3f-12e8-4561-8053-4f6d88853250",
       "title": "As an Advisor, I want to manually override a course prerequisite restriction for a student",
       "description": "1. Pass if an authorized Advisor account can successfully bypass a prerequisite block when clicking the \"Override Restriction\" button.\n2. Pass if the system instantly logs the Advisor's ID, Student's ID, course details, and a timestamp into the immutable audit database trail.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "1cd470d4-3f88-4872-9c08-dbc32c6ebf23",
+      "title": "As a Student, I want to drag and drop classes from the course catalog into a visual calend",
+      "description": "1. Pass if a user can click a course block from the catalog list, drag it, and cleanly drop it into an available calendar time slot.\n2. Pass if dropping a course into an overlapping time slot instantly triggers a distinct red visual warning overlay on the conflicting items.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
       "type": "User Story",
