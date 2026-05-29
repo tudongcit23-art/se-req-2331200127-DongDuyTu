@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:14:51.622Z",
+  "savedAt": "2026-05-29T15:15:28.815Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -32,6 +32,16 @@
       "id": "1cd470d4-3f88-4872-9c08-dbc32c6ebf23",
       "title": "As a Student, I want to drag and drop classes from the course catalog into a visual calend",
       "description": "1. Pass if a user can click a course block from the catalog list, drag it, and cleanly drop it into an available calendar time slot.\n2. Pass if dropping a course into an overlapping time slot instantly triggers a distinct red visual warning overlay on the conflicting items.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "850cef9c-eb4b-4cd3-870f-fa4d7f26ec6e",
+      "title": "As a Student, I want to receive an alert if I add a class that starts at 8:00 AM, so that",
+      "description": "1. Pass if the system detects an 08:00 AM start time during configuration and triggers an explicit modal dialogue reading: \"Warning: This class starts at 8:00 AM.\"\n2. Pass if the system allows the user to acknowledge the alert and explicitly choose to either keep or discard the selected course block.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
       "type": "User Story",
