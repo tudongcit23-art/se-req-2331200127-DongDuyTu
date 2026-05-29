@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T23:16:34.345Z",
+  "savedAt": "2026-05-29T23:18:11.753Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -42,6 +42,16 @@
       "id": "e39c6d18-b592-41c4-a93d-e30a300a5172",
       "title": "As a Senior Student, I want to scan a textbook's barcode with my smartphone camera, so tha",
       "description": "1. Pass if tapping the scanner icon successfully triggers the native device camera overlay and decodes standard EAN/ISBN barcodes.\n   2. Pass if the system instantly auto-populates the Title and ISBN input fields upon fetching valid metadata from the book database.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "d17e48eb-18fb-41b1-938d-6a51fa24ccde",
+      "title": "As a Student, I want to launch an item listing with a custom starting price and auction ex",
+      "description": "1. Pass if incoming bids lower than or equal to the current active highest bid are rejected with a real-time error toast notification.\n2. Pass if the system freezes all bidding actions and declares the highest bidder as the winner exactly at the defined expiration timestamp.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
       "type": "User Story",
