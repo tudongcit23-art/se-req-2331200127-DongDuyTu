@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T23:18:11.753Z",
+  "savedAt": "2026-05-29T23:18:40.777Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -52,6 +52,16 @@
       "id": "d17e48eb-18fb-41b1-938d-6a51fa24ccde",
       "title": "As a Student, I want to launch an item listing with a custom starting price and auction ex",
       "description": "1. Pass if incoming bids lower than or equal to the current active highest bid are rejected with a real-time error toast notification.\n2. Pass if the system freezes all bidding actions and declares the highest bidder as the winner exactly at the defined expiration timestamp.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "ba99070a-c372-4223-8857-92e5001d83ad",
+      "title": "As a Buyer, I want to view the seller's designated offline peer-to-peer payment preference",
+      "description": "1. Pass if the item creation flow requires the seller to explicitly toggle at least one approved external payment method (Cash/Venmo).\n   2. Pass if the chosen external payment preference badge is clearly rendered next to the item price layout on the product detail page.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
       "type": "User Story",
