@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T07:13:23.023Z",
+  "savedAt": "2026-05-29T07:14:30.933Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -22,8 +22,8 @@
     "ambiguity1": "The requirement to \"auction items, not just set a fixed price\" is too vague because it does not define the core auction mechanics. It fails to specify bidding increments, duration boundaries, sniper protection rules, or how the system should handle winning bidder defaults, making it impossible to write definitive test cases.",
     "ambiguity2": "The constraint \"Only people with a valid .edu email address can create an account\" is ambiguous regarding its boundaries. It does not clarify if registration is restricted strictly to our specific university's domain, or if any student from any global university with a generic .edu suffix is permitted to join.",
     "conflictSolution": "Conflict: The Student Union President wants to collect a 2% transaction fee on every sale to fund club activities, but the University Legal Team strictly forbids the application from processing payments or handling transactional funds.\n\nResolution: Maintain a zero-financial-transaction architecture inside the app to completely satisfy Legal Team constraints, keeping all payments strictly P2P via external cash or Venmo. To satisfy the Student Union's funding goals, replace the automated transaction fee with an optional premium listing feature (e.g., fee-based item bumping) or a fixed posting fee for high-value furniture, paid externally through an approved university donation portal.",
-    "nfr1": "",
-    "nfr2": "",
-    "nfr3": ""
+    "nfr1": "The system must enforce mandatory physical location data validation, locking user communication until an approved Safe Exchange Zone is selected.",
+    "nfr2": "The barcode scanning component must integrate with the device's native camera to decode ISBN data and query reference APIs within 3 seconds.",
+    "nfr3": "The platform must operate entirely without internal payment gateways or digital wallets, ensuring zero exposure to financial transaction liability."
   }
 }
