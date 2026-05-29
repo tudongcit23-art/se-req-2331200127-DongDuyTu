@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T07:16:11.757Z",
+  "savedAt": "2026-05-29T07:17:01.701Z",
   "groups": [
     {
       "id": "fd533f7d-d1ec-4fce-91b8-a640e122a1d2",
@@ -20,7 +20,7 @@
   "tickets": [],
   "analysis": {
     "ambiguity1": "The requirement \"to order food on their phone while they are walking from class\" is too vague regarding its platform target. It fails to specify whether the system must be delivered as a native mobile application (iOS/Android) or a mobile-responsive web application, affecting testing boundaries.",
-    "ambiguity2": "",
+    "ambiguity2": "The marketing requirement to \"send push notifications to students at 11:30 AM\" is ambiguous. It does not define how the system should handle OS-level user permission denials or how it manages delivery constraints if a student's device is completely offline in a basement classroom.",
     "conflictSolution": "",
     "nfr1": "",
     "nfr2": "",
