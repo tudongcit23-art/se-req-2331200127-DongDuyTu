@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:15:56.680Z",
+  "savedAt": "2026-05-29T15:17:22.799Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -52,6 +52,16 @@
       "id": "59e47115-e8a1-4298-9136-8084e546a78c",
       "title": "As a Student, I want my personal academic schedule to be strictly confidential, so that my",
       "description": "1. Pass if a logged-in student can exclusively view and edit their own active roadmap interface.\n2. Pass if any attempt to view another student's schedule by guessing or forcing direct URL structures returns an explicit 403 Forbidden error screen.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "40d67419-a8e0-4efd-9981-a1bc9d67d361",
+      "title": "As a Student, I want to see real-time availability tags linked to the live database, so th",
+      "description": "1. Pass if a course with zero open seats immediately updates to display a greyed-out \"Class Full\" badge within the UI catalog layout.\n2. Pass if the system restricts final validation submission when a student tries to save a full course into their final term registration queue.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
       "type": "User Story",
