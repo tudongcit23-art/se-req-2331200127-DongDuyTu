@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:15:28.815Z",
+  "savedAt": "2026-05-29T15:15:56.680Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -42,6 +42,16 @@
       "id": "850cef9c-eb4b-4cd3-870f-fa4d7f26ec6e",
       "title": "As a Student, I want to receive an alert if I add a class that starts at 8:00 AM, so that",
       "description": "1. Pass if the system detects an 08:00 AM start time during configuration and triggers an explicit modal dialogue reading: \"Warning: This class starts at 8:00 AM.\"\n2. Pass if the system allows the user to acknowledge the alert and explicitly choose to either keep or discard the selected course block.",
+      "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "59e47115-e8a1-4298-9136-8084e546a78c",
+      "title": "As a Student, I want my personal academic schedule to be strictly confidential, so that my",
+      "description": "1. Pass if a logged-in student can exclusively view and edit their own active roadmap interface.\n2. Pass if any attempt to view another student's schedule by guessing or forcing direct URL structures returns an explicit 403 Forbidden error screen.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
       "type": "User Story",
