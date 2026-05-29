@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-05-29T07:16:11.757Z",
+  "groups": [
+    {
+      "id": "fd533f7d-d1ec-4fce-91b8-a640e122a1d2",
+      "name": "Blockers",
+      "color": "#2563eb"
+    },
+    {
+      "id": "15a79986-b1ae-4db1-be3e-bbd495afa309",
+      "name": "Standard Work",
+      "color": "#059669"
+    },
+    {
+      "id": "2d39116e-4783-42f7-a350-1cf08b6cb064",
+      "name": "Minors",
+      "color": "#d97706"
+    }
+  ],
+  "tickets": [],
+  "analysis": {
+    "ambiguity1": "The requirement \"to order food on their phone while they are walking from class\" is too vague regarding its platform target. It fails to specify whether the system must be delivered as a native mobile application (iOS/Android) or a mobile-responsive web application, affecting testing boundaries.",
+    "ambiguity2": "",
+    "conflictSolution": "",
+    "nfr1": "",
+    "nfr2": "",
+    "nfr3": ""
+  }
+}
