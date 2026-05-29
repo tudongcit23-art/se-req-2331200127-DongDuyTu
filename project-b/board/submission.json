@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T07:14:30.933Z",
+  "savedAt": "2026-05-29T15:23:54.039Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -17,7 +17,18 @@
       "color": "#d97706"
     }
   ],
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "e61006b2-459f-49c9-82b9-e37de229137d",
+      "title": "As a Campus Police Officer, I want the application to force buyers and sellers to choose a",
+      "description": "1. Pass if the \"Open Chat\" button remains completely disabled until a location from the verified safe zone dropdown is selected.\n   2. Pass if the selected Safe Exchange Zone is permanently pinned at the top header of the active transaction chat window.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    }
+  ],
   "analysis": {
     "ambiguity1": "The requirement to \"auction items, not just set a fixed price\" is too vague because it does not define the core auction mechanics. It fails to specify bidding increments, duration boundaries, sniper protection rules, or how the system should handle winning bidder defaults, making it impossible to write definitive test cases.",
     "ambiguity2": "The constraint \"Only people with a valid .edu email address can create an account\" is ambiguous regarding its boundaries. It does not clarify if registration is restricted strictly to our specific university's domain, or if any student from any global university with a generic .edu suffix is permitted to join.",
