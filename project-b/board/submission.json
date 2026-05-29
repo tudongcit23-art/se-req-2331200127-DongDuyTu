@@ -1,0 +1,29 @@
+{
+  "savedAt": "2026-05-29T07:04:31.126Z",
+  "groups": [
+    {
+      "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
+      "name": "Blockers",
+      "color": "#2563eb"
+    },
+    {
+      "id": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "name": "Standard Work",
+      "color": "#059669"
+    },
+    {
+      "id": "0876b284-28fd-422d-9957-78e68136cde1",
+      "name": "Minors",
+      "color": "#d97706"
+    }
+  ],
+  "tickets": [],
+  "analysis": {
+    "ambiguity1": "The requirement to \"auction items, not just set a fixed price\" is too vague because it does not define the core auction mechanics. It fails to specify bidding increments, duration boundaries, sniper protection rules, or how the system should handle winning bidder defaults, making it impossible to write definitive test cases.",
+    "ambiguity2": "",
+    "conflictSolution": "",
+    "nfr1": "",
+    "nfr2": "",
+    "nfr3": ""
+  }
+}
