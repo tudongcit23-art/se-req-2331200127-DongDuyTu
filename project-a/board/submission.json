@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T06:41:05.998Z",
+  "savedAt": "2026-05-29T06:42:18.646Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -21,7 +21,7 @@
   "analysis": {
     "ambiguity1": "The requirement \"the app to warn me if I am choosing a class that starts at 8:00 AM\" is too vague because it does not define the technical nature or behavior of the warning. It fails to specify whether the system should display a non-blocking visual alert, an email notification, or completely block the action, making it impossible to create an exact test case.",
     "ambiguity2": "The requirement to \"link to the live database\" to block full classes, while simultaneously allowing students to \"plan 4 years ahead\" when future class capacities are completely unknown, is ambiguous. It lacks clear logical boundaries on how the system should handle future semester timelines where active database entries do not yet exist.",
-    "conflictSolution": "",
+    "conflictSolution": "Conflict: The Registrar requires the system to block students from adding full classes using live database checks, whereas the Head of Advising wants students to be able to map out a full 4-year plan when capacity states are unknown.\n\nResolution: Implement a dual-state system featuring a \"Draft Roadmap\" mode and an \"Active Registration\" mode. For long-term planning (years 2 to 4), the system allows students to freely add courses without capacity constraints. For the current active semester, the system connects directly to the live database, flags full classes with a clear visual indicator, and restricts official validation until open slots are chosen.",
     "nfr1": "",
     "nfr2": "",
     "nfr3": ""
