@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T23:18:40.777Z",
+  "savedAt": "2026-05-29T23:19:41.912Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -65,6 +65,36 @@
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
       "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "b096b0d6-c507-4746-9d12-f3959246c6f3",
+      "title": "NFR Epic 1: The system must enforce mandatory physical location data validation, l",
+      "description": "The system must enforce mandatory physical location data validation, locking user communication until an approved Safe Exchange Zone is selected.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "b5f5eddd-8bac-43ab-9e13-21614f832e56",
+      "title": "NFR Epic 2: The barcode scanning component must integrate with the device's native",
+      "description": "The barcode scanning component must integrate with the device's native camera to decode ISBN data and query reference APIs within 3 seconds.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "Epic",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "3c80806c-0807-441e-b655-8376ca67871f",
+      "title": "NFR Epic 3: The platform must operate entirely without internal payment gateways o",
+      "description": "The platform must operate entirely without internal payment gateways or digital wallets, ensuring zero exposure to financial transaction liability.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "Epic",
       "priority": "Medium",
       "owner": ""
     }
