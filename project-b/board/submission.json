@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:25:06.095Z",
+  "savedAt": "2026-05-29T23:16:34.345Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -32,6 +32,16 @@
       "id": "7570bfd9-2fe9-428e-bb8e-66cb2cc0b720",
       "title": "As a Student, I want to sign up only using my official university email address, so that t",
       "description": "1. Pass if the registration system rejects any email input that does not terminate with the designated institutional .edu extension.\n2. Pass if account activation is strictly gated until the user clicks a unique verification link dispatched to that specific email address.",
+      "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "e39c6d18-b592-41c4-a93d-e30a300a5172",
+      "title": "As a Senior Student, I want to scan a textbook's barcode with my smartphone camera, so tha",
+      "description": "1. Pass if tapping the scanner icon successfully triggers the native device camera overlay and decodes standard EAN/ISBN barcodes.\n   2. Pass if the system instantly auto-populates the Title and ISBN input fields upon fetching valid metadata from the book database.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
       "type": "User Story",
