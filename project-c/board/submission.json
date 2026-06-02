@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T07:18:33.573Z",
+  "savedAt": "2026-06-02T06:41:12.657Z",
   "groups": [
     {
       "id": "fd533f7d-d1ec-4fce-91b8-a640e122a1d2",
@@ -17,7 +17,18 @@
       "color": "#d97706"
     }
   ],
-  "tickets": [],
+  "tickets": [
+    {
+      "id": "5bfeca5e-b09e-46da-810d-21f1c38fbf52",
+      "title": "As a Chef, I want to mark any menu item as 'Sold Out' instantly from my kitchen display te",
+      "description": "1. Pass if tapping the \"Sold Out\" button updates the local kitchen screen interface state within 1 second.\n   2. Pass if the system queues the status update and syncs it to the live cloud menu database immediately upon network restoration.",
+      "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    }
+  ],
   "analysis": {
     "ambiguity1": "The requirement \"to order food on their phone while they are walking from class\" is too vague regarding its platform target. It fails to specify whether the system must be delivered as a native mobile application (iOS/Android) or a mobile-responsive web application, affecting testing boundaries.",
     "ambiguity2": "The marketing requirement to \"send push notifications to students at 11:30 AM\" is ambiguous. It does not define how the system should handle OS-level user permission denials or how it manages delivery constraints if a student's device is completely offline in a basement classroom.",
