@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-06-02T06:53:58.113Z",
+  "savedAt": "2026-06-02T07:21:28.715Z",
   "groups": [
     {
       "id": "fd533f7d-d1ec-4fce-91b8-a640e122a1d2",
@@ -20,7 +20,7 @@
   "tickets": [
     {
       "id": "5bfeca5e-b09e-46da-810d-21f1c38fbf52",
-      "title": "As a Chef, I want to mark any menu item as 'Sold Out' instantly from my kitchen display te",
+      "title": "As a Chef, I want to mark items Sold Out, so that invalid orders are blocked",
       "description": "1. Pass if tapping the \"Sold Out\" button updates the local kitchen screen interface state within 1 second.\n   2. Pass if the system queues the status update and syncs it to the live cloud menu database immediately upon network restoration.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
@@ -30,7 +30,7 @@
     },
     {
       "id": "25064ffb-798e-4024-8ce5-a09388f3da06",
-      "title": "As a Student with a nut allergy, I want to apply a 'No Peanuts' filter to the mobile menu",
+      "title": "As a Student, I want a peanut menu filter, so that allergen items are hidden.",
       "description": "1. Pass if checking the 'No Peanuts' constraint immediately filters out and excludes all peanut-tagged food items from the display grid.\n2. Pass if the applied allergen profile filter configuration persists across active user session reloads.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
@@ -40,7 +40,7 @@
     },
     {
       "id": "5aa303dd-ab8f-4635-87af-b427cae39314",
-      "title": "As a Student, I want to place and pay for my lunch order on my mobile phone while walking",
+      "title": "As a Student, I want mobile food ordering, so I completely skip 20-min lines.",
       "description": "1. Pass if the mobile system successfully processes the transaction and renders a secure order confirmation QR code.\n   2. Pass if the generated order is dispatched to the kitchen terminal queue in real-time under stable connectivity.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
@@ -50,7 +50,7 @@
     },
     {
       "id": "d7e19efc-be44-4632-ba85-8c1430c37248",
-      "title": "As a Student, I want my mobile ordering session to handle minor Wi-Fi drops gracefully",
+      "title": "As a Student, I want safe offline cart states, so data isn't lost during drops",
       "description": "1. Pass if active shopping cart state parameters remain fully intact inside client-side local storage during network transitions.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
@@ -60,7 +60,7 @@
     },
     {
       "id": "d3077328-bbb5-45ab-8190-ae345405f063",
-      "title": "As a Student, I want to receive a push notification precisely at 11:30 AM",
+      "title": "As a Student, I want 11:30 AM lunch alerts, so that I can plan my order early.",
       "description": "1. Pass if the system background scheduler dispatches the daily promotion push notification exactly at 11:30 AM local time.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
@@ -69,7 +69,7 @@
       "owner": ""
     },
     {
-      "id": "acf69e65-da7b-4f87-8222-0877d733f0f4",
+      "id": "a598ffe8-924b-46fc-98da-ed4af27dcd77",
       "title": "NFR Epic 1: The kitchen display system must include a local data persistence layer",
       "description": "The kitchen display system must include a local data persistence layer that enables continuous offline operations for at least 10 minutes during Wi-Fi disconnections.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
@@ -79,7 +79,7 @@
       "owner": ""
     },
     {
-      "id": "450f254c-cf24-492b-b5e4-eb4192d8e5e4",
+      "id": "14b865bc-79ef-4319-b7ee-38a0357157d4",
       "title": "NFR Epic 2: The mobile menu application must execute strict client-side data filte",
       "description": "The mobile menu application must execute strict client-side data filtering to completely hide allergen-containing items based on active user profile restrictions.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
@@ -89,7 +89,7 @@
       "owner": ""
     },
     {
-      "id": "2b793a87-39d2-4262-b395-0311fb877db6",
+      "id": "cd4ff8da-da81-4da5-91bb-83362dc815c3",
       "title": "NFR Epic 3: The order routing system architecture must minimize processing bottlen",
       "description": "The order routing system architecture must minimize processing bottlenecks to scale effectively and reduce peak physical queue times below 20 minutes.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",

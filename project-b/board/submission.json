@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T23:19:41.912Z",
+  "savedAt": "2026-06-02T07:17:09.947Z",
   "groups": [
     {
       "id": "55b747e6-66cd-4b2d-9a07-83b7143ad0b9",
@@ -20,7 +20,7 @@
   "tickets": [
     {
       "id": "e61006b2-459f-49c9-82b9-e37de229137d",
-      "title": "As a Campus Police Officer, I want the application to force buyers and sellers to choose a",
+      "title": "As an Officer, I want forced safe zones, so that campus meetups remain secure.",
       "description": "1. Pass if the \"Open Chat\" button remains completely disabled until a location from the verified safe zone dropdown is selected.\n   2. Pass if the selected Safe Exchange Zone is permanently pinned at the top header of the active transaction chat window.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
@@ -30,7 +30,7 @@
     },
     {
       "id": "7570bfd9-2fe9-428e-bb8e-66cb2cc0b720",
-      "title": "As a Student, I want to sign up only using my official university email address, so that t",
+      "title": "As a Student, I want institutional email signups, so the app remains exclusive.",
       "description": "1. Pass if the registration system rejects any email input that does not terminate with the designated institutional .edu extension.\n2. Pass if account activation is strictly gated until the user clicks a unique verification link dispatched to that specific email address.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
@@ -40,7 +40,7 @@
     },
     {
       "id": "e39c6d18-b592-41c4-a93d-e30a300a5172",
-      "title": "As a Senior Student, I want to scan a textbook's barcode with my smartphone camera, so tha",
+      "title": "As a Senior, I want to scan textbook barcodes, so that metadata auto-populates.",
       "description": "1. Pass if tapping the scanner icon successfully triggers the native device camera overlay and decodes standard EAN/ISBN barcodes.\n   2. Pass if the system instantly auto-populates the Title and ISBN input fields upon fetching valid metadata from the book database.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
@@ -50,7 +50,7 @@
     },
     {
       "id": "d17e48eb-18fb-41b1-938d-6a51fa24ccde",
-      "title": "As a Student, I want to launch an item listing with a custom starting price and auction ex",
+      "title": "As a Student, I want custom auction listing options, so I maximize bidding profit.",
       "description": "1. Pass if incoming bids lower than or equal to the current active highest bid are rejected with a real-time error toast notification.\n2. Pass if the system freezes all bidding actions and declares the highest bidder as the winner exactly at the defined expiration timestamp.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
@@ -60,7 +60,7 @@
     },
     {
       "id": "ba99070a-c372-4223-8857-92e5001d83ad",
-      "title": "As a Buyer, I want to view the seller's designated offline peer-to-peer payment preference",
+      "title": "As a Buyer, I want to view offline payment preferences, so I prepare cash/Venmo.",
       "description": "1. Pass if the item creation flow requires the seller to explicitly toggle at least one approved external payment method (Cash/Venmo).\n   2. Pass if the chosen external payment preference badge is clearly rendered next to the item price layout on the product detail page.",
       "groupId": "08c683c2-62a0-4e64-855e-a1485beeded6",
       "status": "todo",
