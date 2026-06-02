@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-06-02T06:42:53.545Z",
+  "savedAt": "2026-06-02T06:43:45.178Z",
   "groups": [
     {
       "id": "fd533f7d-d1ec-4fce-91b8-a640e122a1d2",
@@ -32,6 +32,16 @@
       "id": "25064ffb-798e-4024-8ce5-a09388f3da06",
       "title": "As a Student with a nut allergy, I want to apply a 'No Peanuts' filter to the mobile menu",
       "description": "1. Pass if checking the 'No Peanuts' constraint immediately filters out and excludes all peanut-tagged food items from the display grid.\n2. Pass if the applied allergen profile filter configuration persists across active user session reloads.",
+      "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "5aa303dd-ab8f-4635-87af-b427cae39314",
+      "title": "As a Student, I want to place and pay for my lunch order on my mobile phone while walking",
+      "description": "1. Pass if the mobile system successfully processes the transaction and renders a secure order confirmation QR code.\n   2. Pass if the generated order is dispatched to the kitchen terminal queue in real-time under stable connectivity.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
       "type": "User Story",
