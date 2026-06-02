@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-05-29T15:19:12.856Z",
+  "savedAt": "2026-06-02T07:08:43.106Z",
   "groups": [
     {
       "id": "6dc54787-4eb6-4d12-bcef-88476a7746a8",
@@ -20,7 +20,7 @@
   "tickets": [
     {
       "id": "f0433f3f-12e8-4561-8053-4f6d88853250",
-      "title": "As an Advisor, I want to manually override a course prerequisite restriction for a student",
+      "title": "As an Advisor, I want to override prerequisites, so that students graduate on time.",
       "description": "1. Pass if an authorized Advisor account can successfully bypass a prerequisite block when clicking the \"Override Restriction\" button.\n2. Pass if the system instantly logs the Advisor's ID, Student's ID, course details, and a timestamp into the immutable audit database trail.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
@@ -30,7 +30,7 @@
     },
     {
       "id": "1cd470d4-3f88-4872-9c08-dbc32c6ebf23",
-      "title": "As a Student, I want to drag and drop classes from the course catalog into a visual calend",
+      "title": "As a Student, I want to drag classes to a calendar, so I can plan visually.",
       "description": "1. Pass if a user can click a course block from the catalog list, drag it, and cleanly drop it into an available calendar time slot.\n2. Pass if dropping a course into an overlapping time slot instantly triggers a distinct red visual warning overlay on the conflicting items.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
@@ -40,7 +40,7 @@
     },
     {
       "id": "850cef9c-eb4b-4cd3-870f-fa4d7f26ec6e",
-      "title": "As a Student, I want to receive an alert if I add a class that starts at 8:00 AM, so that",
+      "title": "As a Student, I want 8 AM class alerts, so that I avoid oversleeping.",
       "description": "1. Pass if the system detects an 08:00 AM start time during configuration and triggers an explicit modal dialogue reading: \"Warning: This class starts at 8:00 AM.\"\n2. Pass if the system allows the user to acknowledge the alert and explicitly choose to either keep or discard the selected course block.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
@@ -50,7 +50,7 @@
     },
     {
       "id": "59e47115-e8a1-4298-9136-8084e546a78c",
-      "title": "As a Student, I want my personal academic schedule to be strictly confidential, so that my",
+      "title": "As a Student, I want private schedules, so that my data is protected.",
       "description": "1. Pass if a logged-in student can exclusively view and edit their own active roadmap interface.\n2. Pass if any attempt to view another student's schedule by guessing or forcing direct URL structures returns an explicit 403 Forbidden error screen.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
@@ -60,7 +60,7 @@
     },
     {
       "id": "40d67419-a8e0-4efd-9981-a1bc9d67d361",
-      "title": "As a Student, I want to see real-time availability tags linked to the live database, so th",
+      "title": "As a Student, I want live class status tags, so I don't add full classes.",
       "description": "1. Pass if a course with zero open seats immediately updates to display a greyed-out \"Class Full\" badge within the UI catalog layout.\n2. Pass if the system restricts final validation submission when a student tries to save a full course into their final term registration queue.",
       "groupId": "b4da7d67-8c7a-40a1-bab1-0b3a7ee9ae5b",
       "status": "todo",
