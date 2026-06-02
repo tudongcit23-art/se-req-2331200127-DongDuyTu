@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-06-02T06:43:45.178Z",
+  "savedAt": "2026-06-02T06:44:53.065Z",
   "groups": [
     {
       "id": "fd533f7d-d1ec-4fce-91b8-a640e122a1d2",
@@ -42,6 +42,16 @@
       "id": "5aa303dd-ab8f-4635-87af-b427cae39314",
       "title": "As a Student, I want to place and pay for my lunch order on my mobile phone while walking",
       "description": "1. Pass if the mobile system successfully processes the transaction and renders a secure order confirmation QR code.\n   2. Pass if the generated order is dispatched to the kitchen terminal queue in real-time under stable connectivity.",
+      "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
+      "status": "todo",
+      "type": "User Story",
+      "priority": "Medium",
+      "owner": ""
+    },
+    {
+      "id": "d7e19efc-be44-4632-ba85-8c1430c37248",
+      "title": "As a Student, I want my mobile ordering session to handle minor Wi-Fi drops gracefully",
+      "description": "1. Pass if active shopping cart state parameters remain fully intact inside client-side local storage during network transitions.",
       "groupId": "15a79986-b1ae-4db1-be3e-bbd495afa309",
       "status": "todo",
       "type": "User Story",
